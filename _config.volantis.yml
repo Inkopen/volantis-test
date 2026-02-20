@@ -9,7 +9,7 @@ plugins:
     duration: 30000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images: # For personal use only. At your own risk if used for commercial purposes !!!
-      - /imgs/bg.webp
+      - bg.webp
   busuanzi:
     enable: true
   aplayer:
