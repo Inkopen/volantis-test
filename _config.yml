@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Terminus「欢迎来到群星的尽头，远方的友人」
+title: Terminus「此间孤寂，唯有星光。」
 subtitle: ''
-description: ''
+description: 'Terminus'
 keywords:
 author: 砚海_Inkocean
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://terminus.hdilp.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

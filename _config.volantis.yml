@@ -1,6 +1,34 @@
 cover:
   height_scheme: full # full, half
-  layout_scheme: focus # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout_scheme: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter 'cover: true'
+  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  title: <h1 id="binft"></h1>
+  search: 搜索... # search bar placeholder
+  features:
+    - name: 首页
+      # img: volantis-static/media/twemoji/assets/svg/1f4eb.svg
+      url: /
+    - name: 文章
+      # img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /archives/
+
+scroll_smooth: true
+dns_prefetch:
+  - https://unpkg.com
+  - https://cdn.bootcdn.net
+
+############################### Comments ############################### > start
+comments:
+  title: <i class='fa-classic fa-comments'></i> 评论区
+  subtitle:
+  service: twikoo
+  twikoo:
+    path: # 全局评论地址
+    envId: https://twikoo.hdilp.top/
 
 plugins:
   ################ required plugins ################
@@ -67,9 +95,14 @@ plugins:
     duration: 30000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images: # For personal use only. At your own risk if used for commercial purposes !!!
-      - /bg/bg.webp
-      - /bg/bg2.webp
-      - /bg/bg3.webp
+      - /bg/1.webp
+      - /bg/2.webp
+      - /bg/3.webp
+      - /bg/5.webp
+      - /bg/6.webp
+      - /bg/7.webp
+      - /bg/8.webp
+
   busuanzi:
     enable: true
   aplayer:
@@ -109,3 +142,76 @@ plugins:
     banUrl:              # 被屏蔽的 url 地址将不启用 pjax 跳转，可以在控制台下使用 window.location.pathname 获取
       # - '/artitalk/'   # artitalk 不支持 pjax
       # - '/bbtalk/'     # bbtalk 不支持 pjax
+
+custom_css:
+  cursor:
+    enable: true
+    text: volantis-static/media/cursor/text.png
+    pointer: volantis-static/media/cursor/pointer.png
+    default: volantis-static/media/cursor/left_ptr.png
+    not-allowed: volantis-static/media/cursor/circle.png
+    zoom-out: volantis-static/media/cursor/zoom-out.png
+    zoom-in: volantis-static/media/cursor/zoom-in.png
+    grab: volantis-static/media/cursor/openhand.png
+  font_smoothing: true # font-smoothing for webkit
+  max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  scrollbar:
+    size: 4px
+    border: 2px
+    background: rgb(255, 170, 178) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
+    hover_background: rgb(255, 170, 178) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
+  navbar:
+    height: 64px
+    width: max # auto, max
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  sidebar:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+  body:
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    highlight:
+      language: true # show language of codeblock
+      grayscale: false # Enable grayscale effect
+    text_align: # left, right, justify, center
+      h1: left
+      h2: left
+      h3: left
+      h4: left
+      p: justify
+  gap:
+    h2: 48px # Spacing above H2 (only px unit)
+    h3: 24px # Spacing above H3 (only px unit)
+    h4: 16px # Spacing above H4 (only px unit)
+    p: 1em # Paragraph spacing between paragraphs
+    line_height: 1.6 # normal, 1.5, 1.75, 2 ...
+  border_radius:
+    card: 8px
+    codeblock: 4px
+    searchbar: 8px
+    button: 4px
+  fontsize:
+    root: 16px
+    h1: 1.5rem # 不推荐用在文章中
+    h2: 1.5rem
+    h3: 1.25rem
+    h4: 1.125rem
+    h5: 1rem
+    h6: 1rem
+    list: .9375rem
+    meta: .875rem
+    code: .8125rem
+    footnote: .78125rem
+  fontfamily:
+    logofont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: /font/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: '"DouyinSans", Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: /font/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+
+############################### Custom css ############################### > end
